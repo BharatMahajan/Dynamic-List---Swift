@@ -12,6 +12,10 @@
 		A01A53391FB22BE400765D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01A53371FB22BE400765D86 /* Main.storyboard */; };
 		A01A533B1FB22BE400765D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01A533A1FB22BE400765D86 /* Assets.xcassets */; };
 		A01A533E1FB22BE400765D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01A533C1FB22BE400765D86 /* LaunchScreen.storyboard */; };
+		A01A534F1FB22FA700765D86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01A534E1FB22FA700765D86 /* Constants.swift */; };
+		A01A53521FB2311400765D86 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01A53501FB2311400765D86 /* ListTableViewCell.swift */; };
+		A01A53531FB2311400765D86 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01A53511FB2311400765D86 /* ListTableViewCell.xib */; };
+		A01A53551FB23B2B00765D86 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01A53541FB23B2B00765D86 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		A01A533A1FB22BE400765D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A01A533D1FB22BE400765D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A01A533F1FB22BE400765D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01A534E1FB22FA700765D86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A01A53501FB2311400765D86 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		A01A53511FB2311400765D86 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		A01A53541FB23B2B00765D86 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,66 @@
 		A01A53321FB22BE400765D86 /* REST-List */ = {
 			isa = PBXGroup;
 			children = (
-				A01A53331FB22BE400765D86 /* AppDelegate.swift */,
-				A01A53351FB22BE400765D86 /* ViewController.swift */,
-				A01A53371FB22BE400765D86 /* Main.storyboard */,
+				A01A534B1FB22F2F00765D86 /* Utilities */,
+				A01A53491FB22C3300765D86 /* AppDelegate */,
+				A01A53481FB22C1A00765D86 /* Storyboard */,
+				A01A53461FB22BF600765D86 /* DataModel */,
+				A01A53451FB22BEC00765D86 /* ViewController */,
 				A01A533A1FB22BE400765D86 /* Assets.xcassets */,
-				A01A533C1FB22BE400765D86 /* LaunchScreen.storyboard */,
 				A01A533F1FB22BE400765D86 /* Info.plist */,
 			);
 			path = "REST-List";
+			sourceTree = "<group>";
+		};
+		A01A53451FB22BEC00765D86 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A01A534A1FB22D3900765D86 /* ListCell */,
+				A01A53351FB22BE400765D86 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A01A53461FB22BF600765D86 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A01A53541FB23B2B00765D86 /* Post.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		A01A53481FB22C1A00765D86 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A01A533C1FB22BE400765D86 /* LaunchScreen.storyboard */,
+				A01A53371FB22BE400765D86 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A01A53491FB22C3300765D86 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A01A53331FB22BE400765D86 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A01A534A1FB22D3900765D86 /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
+				A01A53501FB2311400765D86 /* ListTableViewCell.swift */,
+				A01A53511FB2311400765D86 /* ListTableViewCell.xib */,
+			);
+			path = ListCell;
+			sourceTree = "<group>";
+		};
+		A01A534B1FB22F2F00765D86 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A01A534E1FB22FA700765D86 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01A533E1FB22BE400765D86 /* LaunchScreen.storyboard in Resources */,
+				A01A53531FB2311400765D86 /* ListTableViewCell.xib in Resources */,
 				A01A533B1FB22BE400765D86 /* Assets.xcassets in Resources */,
 				A01A53391FB22BE400765D86 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01A53361FB22BE400765D86 /* ViewController.swift in Sources */,
+				A01A53521FB2311400765D86 /* ListTableViewCell.swift in Sources */,
 				A01A53341FB22BE400765D86 /* AppDelegate.swift in Sources */,
+				A01A534F1FB22FA700765D86 /* Constants.swift in Sources */,
+				A01A53551FB23B2B00765D86 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
